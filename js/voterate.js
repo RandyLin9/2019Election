@@ -1,24 +1,24 @@
-var tearGasOptions = {
+var voterateOptions = {
     visualMap: {
         min: 0,
-        max: 170,
+        max: 100,
         text: ['High', 'Low'],
         realtime: false,
         calculable: true,
         inRange: {
-            color: ['#80b9d9','#a180d9']
+            color: ['#4557c7','#5968cd','#6c7ad3','#808cd9','#949edf','#a7b0e5','#bbc1eb', '#ebe4bb','#d9cd80','#c7b645']
         }
     },
 
     tooltip: {
         trigger: 'item',
-        formatter: '{b} - {c}places'
+        formatter: '{b} - {c}%'
     },
 
     title: {
-        text: 'Tear Gas Area by District',
-        subtext: 'data from Hong Kong tear gas map',
-        sublink: 'https://www.google.com/maps/d/u/0/embed?mid=1J0xABJYyqeY7V9BBAd-Q_ZCY3Mn22wok&ll=22.382581894986814%2C114.10570435&z=11',
+        text: 'Vote Rate of Pro-Democracy Camp',
+        subtext: 'data from Electoral Affairs Commission',
+        sublink: 'https://www.elections.gov.hk/dc2019/eng/results.html',
         left: 'left',
         textStyle: {
             color: '#000'}
@@ -56,26 +56,25 @@ var tearGasOptions = {
                 },
                 }
             },
-
         data: [
-            { name: '中西區', value: 60 },
-            { name: '灣仔', value: 149 },
-            { name: '東區', value: 17 },
-            { name: '南區', value: 6 },
-            { name: '油尖旺', value: 161 },
-            { name: '深水埗', value: 27 },
-            { name: '九龍城', value: 18 },
-            { name: '黃大仙', value: 69 },
-            { name: '觀塘', value: 10   },
-            { name: '葵青', value: 10 },
-            { name: '荃灣', value: 49 },
-            { name: '屯門', value: 43 },
-            { name: '元朗', value: 25 },
-            { name: '北區', value: 3 },
-            { name: '大埔', value: 10 },
-            { name: '沙田', value: 54 },
-            { name: '西貢', value: 7 },
-            { name: '離島', value: 0 }
+            { name: '中西區', value: 93 },
+            { name: '灣仔', value: 69 },
+            { name: '東區', value: 91 },
+            { name: '南區', value: 88 },
+            { name: '油尖旺', value: 85 },
+            { name: '深水埗', value: 88 },
+            { name: '九龍城', value: 60 },
+            { name: '黃大仙', value: 100 },
+            { name: '觀塘', value: 70 },
+            { name: '葵青', value: 87 },
+            { name: '荃灣', value: 84 },
+            { name: '屯門', value: 90 },
+            { name: '元朗', value: 84 },
+            { name: '北區', value: 83 },
+            { name: '大埔', value: 100 },
+            { name: '沙田', value: 97 },
+            { name: '西貢', value: 89 },
+            { name: '離島', value: 70 }
         ],
         nameMap: {
             'Central and Western': '中西區',

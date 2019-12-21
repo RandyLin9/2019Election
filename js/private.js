@@ -1,12 +1,12 @@
-var tearGasOptions = {
+var privateOptions = {
     visualMap: {
-        min: 0,
-        max: 170,
+        min: 26000,
+        max: 120000,
         text: ['High', 'Low'],
         realtime: false,
         calculable: true,
         inRange: {
-            color: ['#80b9d9','#a180d9']
+            color: [ '#80b9d9','#a180d9']
         }
     },
 
@@ -16,9 +16,9 @@ var tearGasOptions = {
     },
 
     title: {
-        text: 'Tear Gas Area by District',
-        subtext: 'data from Hong Kong tear gas map',
-        sublink: 'https://www.google.com/maps/d/u/0/embed?mid=1J0xABJYyqeY7V9BBAd-Q_ZCY3Mn22wok&ll=22.382581894986814%2C114.10570435&z=11',
+        text: 'Number of Private Domestic Units in 2018 ',
+        subtext: 'data from Hong Kong RVD',
+        sublink: 'https://www.rvd.gov.hk/doc/tc/hkpr19/05.pdf',
         left: 'left',
         textStyle: {
             color: '#000'}
@@ -58,24 +58,24 @@ var tearGasOptions = {
             },
 
         data: [
-            { name: '中西區', value: 60 },
-            { name: '灣仔', value: 149 },
-            { name: '東區', value: 17 },
-            { name: '南區', value: 6 },
-            { name: '油尖旺', value: 161 },
-            { name: '深水埗', value: 27 },
-            { name: '九龍城', value: 18 },
-            { name: '黃大仙', value: 69 },
-            { name: '觀塘', value: 10   },
-            { name: '葵青', value: 10 },
-            { name: '荃灣', value: 49 },
-            { name: '屯門', value: 43 },
-            { name: '元朗', value: 25 },
-            { name: '北區', value: 3 },
-            { name: '大埔', value: 10 },
-            { name: '沙田', value: 54 },
-            { name: '西貢', value: 7 },
-            { name: '離島', value: 0 }
+            { name: '中西區', value:  93823 },
+            { name: '灣仔', value:  72647 },
+            { name: '東區', value:  121309 },
+            { name: '南區', value: 42351 },
+            { name: '油尖旺', value:  113167 },
+            { name: '深水埗', value:  77425 },
+            { name: '九龍城', value:  111633 },
+            { name: '黃大仙', value:  19230 },
+            { name: '觀塘', value: 47102   },
+            { name: '葵青', value:  35618 },
+            { name: '荃灣', value: 81479 },
+            { name: '屯門', value:  60109 },
+            { name: '元朗', value:  80974 },
+            { name: '北區', value:  28156 },
+            { name: '大埔', value:  32428 },
+            { name: '沙田', value: 82579 },
+            { name: '西貢', value: 67229 },
+            { name: '離島', value:  26712 }
         ],
         nameMap: {
             'Central and Western': '中西區',

@@ -6,12 +6,21 @@ var populationOptions = {
         realtime: false,
         calculable: true,
         inRange: {
-            color: ['#b9d980', '#808cd9','#d9a180']
+            color: ['#80b9d9','#a180d9']
         }
     },
     tooltip: {
         trigger: 'item',
-        formatter: '{b} - {c}千人'
+        formatter: '{b} - {c}k people'
+    },
+
+    title: {
+        text: 'Population by District',
+        subtext: 'data from Census and Statistics Department',
+        sublink: 'https://www.statistics.gov.hk/pub/B11303012018AN18B0100.pdf',
+        left: 'left',
+        textStyle: {
+            color: '#000'}
     },
 
     // toolbox: {
@@ -40,9 +49,9 @@ var populationOptions = {
                 show: false
             }
         },
-        zoom: 2.5,
+        zoom: 1.5,
         itemStyle: {
-            normal: { label: { show: true } },
+            normal: { label: { show: false } },
             emphasis: { borderColor: '#FFFFFF',
             borderWidth: 1,
             label: {
